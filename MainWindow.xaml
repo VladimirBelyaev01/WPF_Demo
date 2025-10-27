@@ -5,8 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_Demo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="grid" Height="450" Width="800">
+    <Grid x:Name="grid">
+        
+        <Label Grid.Row="1" Grid.Column="1" Content="Hello World!"/>
 
+
+        <Label Grid.Column="1" Content="Sample Text" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top"/>
+        <Button Grid.Column="1" Content="A" HorizontalAlignment="Left" Grid.Row="4" VerticalAlignment="Center" Grid.ColumnSpan="2" Height="87" Width="202" Background="#FF0348F3" FontSize="48" FontWeight="Bold" FontFamily="Snap ITC" Foreground="#FFF9F9F9"/>
+        <Button Grid.Row="3" Grid.Column="4" Content="B" Click="Button_Click"/>
+        <!--<Button Grid.Column="3" Content="B" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Height="87" Width="197"/>-->
+        <!--<Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="100"/>
+        </Grid.ColumnDefinitions>-->
+        <!--<Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="100"/>
+        </Grid.ColumnDefinitions>-->
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
     </Grid>
 </Window>
